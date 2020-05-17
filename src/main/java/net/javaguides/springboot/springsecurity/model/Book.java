@@ -22,7 +22,7 @@ public class Book {
 	private Float price;
 
 	@ManyToOne
-	@JoinColumn
+	@JoinColumn(name = "user_id")
 	private User user;
 
 	protected Book() {
