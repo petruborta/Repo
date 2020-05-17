@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>net.guides.springboot</groupId>
-	<artifactId>registration-login-springboot-security-thymeleaf</artifactId>
+	<artifactId>proiectDAW</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>registration-login-springboot-security-thymeleaf</name>
+	<name>proiectDAW</name>
 	<description>Spring Boot project for managing books</description>
 
 	<parent>
@@ -26,6 +26,14 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+	  		<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+		  	<groupId>org.postgresql</groupId>
+		  	<artifactId>postgresql</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -83,13 +91,13 @@
 			<artifactId>jquery</artifactId>
 			<version>3.2.1</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
