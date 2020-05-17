@@ -5,22 +5,24 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
+@Table(name = "user", schema = "public")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Long id;
 
-    @Column
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column
+    @Column(name = "last_name")
     private String lastName;
 
-    @Column(unique = true)
+    @Column(name = "email", unique = true)
     private String email;
 
-    @Column
+    @Column(name = "password")
     private String password;
 
     @OneToMany(mappedBy = "user")
